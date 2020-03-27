@@ -62,7 +62,7 @@ while ((currNode.LeafFlag & 0b1) > 0) {
 	
 	//Get the char position and bit index for the char.
 	int pos = currNode.Bit >> 3;
-	int bit = currNode.Bit & 0b111
+	int bit = currNode.Bit & 0b111;
 
 	//Jump to the right.
 	if (pos < stringToSearch.Length && (stringToSearch[pos] & (1 << (7 - bit))) > 0) {
