@@ -74,8 +74,8 @@ A reference is used to point to data.
 |0x02|u16|Padding|
 |0x04|u32|Offset value|
 
-### Id Type
+## Id Type
 An Id Type is in the form 0xTTNNNNNN where T is the Type, and N is the Id.
 
-#### Id Type Type List
+### Id Type Type List
 List of types used in ids. TODO!
