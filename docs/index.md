@@ -3,6 +3,10 @@ In case you are a programmer and wish to develop your own tools related to the B
 
 [Common Structures](specs/common.md) - Common structures found throughout the sound archive and its sub-files.
 
-[Sound Archive (BRSAR)](specs/soundArchive.md) - Sound archive that contains everything.
+[Sound Archive (BRSAR)](specs/soundArchive.md) - Sound Archive that contains everything.
+
+[Wave Archive (BRWAR)](specs/waveArchive.md) - Wave Archive that contains Waves.
+
+[Wave (BRWAV)](specs/wave.md) - Wave that contains audio sampling data.
 
 ©2020 Gota7
