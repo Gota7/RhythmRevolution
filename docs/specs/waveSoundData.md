@@ -49,10 +49,10 @@ Contains information about the Wave Sound Entry.
 |0x00|f32|Pitch. Is always 1 if the version is 1.0|
 |0x04|u8|Pan. 64 is middle with 127 being right and 0 being left. Is always 64 if version is 1.0|
 |0x05|u8|Surround Pan. Always 0 if version is 1.0|
-|0x06|u8|FX Send A|Always 0 in versions < 1.2|
-|0x07|u8|FX Send B|Always 0 in versions < 1.2|
-|0x08|u8|FX Send C|Always 0 in versions < 1.2|
-|0x09|u8|Main Send|Always 127 in versions < 1.2|
+|0x06|u8|FX Send A. Always 0 in versions < 1.2|
+|0x07|u8|FX Send B. Always 0 in versions < 1.2|
+|0x08|u8|FX Send C. Always 0 in versions < 1.2|
+|0x09|u8|Main Send. Always 127 in versions < 1.2|
 |0x0A|u8[2]|Padding|
 |0x0C|Reference<`null`>|Null Reference to Graph Envelope Table, never was implemented|
 |0x14|Reference<`null`>|Null Reference to Randomizer Table, never was implemented|
