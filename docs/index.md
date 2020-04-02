@@ -5,6 +5,8 @@ In case you are a programmer and wish to develop your own tools related to the B
 
 [Sound Archive (BRSAR)](specs/soundArchive.md) - Sound Archive that contains everything.
 
+[Wave Sound Data (BRWSD)](specs/waveSoundData.md) - Contains information about how to play Waves.
+
 [Wave Archive (BRWAR)](specs/waveArchive.md) - Wave Archive that contains Waves.
 
 [Wave (BRWAV)](specs/wave.md) - Wave that contains audio sampling data.

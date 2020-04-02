@@ -123,7 +123,7 @@ TODO - AND VERSION DIFFERENCES
 |0x2A|u8|Actor Player Id|
 |0x2B|u8|Reserved|
 
-### Sound Type
+#### Sound Type
 A Sound Type is one byte in size and specifies the type of Sound entry.
 
 | **Identifier** | **Description** |
@@ -133,15 +133,15 @@ A Sound Type is one byte in size and specifies the type of Sound entry.
 |2|Stream|
 |3|Wave|
 
-### Pan Mode
+#### Pan Mode
 
-### Pan Curve
+#### Pan Curve
 
-### Sequence Detailed Sound Info
+#### Sequence Detailed Sound Info
 
-### Stream Detailed Sound Info
+#### Stream Detailed Sound Info
 
-### Wave Detailed Sound Info
+#### Wave Detailed Sound Info
 
 ### Bank Info
 Contains information about banks.
