@@ -20,7 +20,7 @@ Every structure is made of the following primitive types. You will come across t
 |char[Array Size]|Char Array. This is like a string, except that it does not have a null terminator, and always has a fixed size|
 |VL|A variable length parameter. To read it, read a byte, binary and it with 0x7F, and if binary anding the original value by 0x80 is 1, shift that value left 7 bits, and binary or it with the same process you just did for the next bytes, until anding the value with 0x80 is 0|
 
-TODO: DETERMINE IF AN OFFSET IS 0 OR 0xFFFFFFFF WHEN NULL.
+An offset is 0 if null.
 
 ## Offset Size Pair
 Contains a pair of an offset and size.
@@ -67,7 +67,7 @@ This contains a collection of whatever the Type T is. For example, a table could
 |----|---|Padding for alignment|
 
 ## Reference
-A reference is used to point to data.
+A reference is used to point to data. All fields are 0 if it is null.
 
 | **Offset** | **Type** | **Description** |
 |------------|----------|-----------------|

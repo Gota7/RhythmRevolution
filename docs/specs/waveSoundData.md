@@ -37,6 +37,7 @@ Tells how to read a Wave Sound Entry.
 |0x08|Reference<`Table<Reference<TrackInfo>>`>|Tracks Table Reference|
 |0x10|Reference<`Table<Reference<NoteInfo>>`>|Note Table Reference|
 |0x18|Table<`Reference<TrackInfo>`>|Track Table|
+|----|Wave Sound Info|
 |----|TrackInfo[NumTracks]|Tracks|
 |----|Table<`Reference<NoteInfo>`>|Note Table|
 |----|NoteInfo[NumNotes]|Notes|
