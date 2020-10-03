@@ -195,7 +195,7 @@ Groups contain information about which files should be loaded at the same time f
 |0x14|u32|Total size of all files contained within the Group|
 |0x18|a32|Absolute offset of the Wave Archive for the Group|
 |0x1C|u32|Size of the Wave Archive for the Group|
-|0x20|Reference<`Table<GroupEntry>`>|Reference to Group Entry Table|
+|0x20|Reference<`Table<Reference<GroupEntry>>`>|Reference to Group Entry Table|
 
 #### Group Entry
 A Group Entry represents a file contained within a Group.
