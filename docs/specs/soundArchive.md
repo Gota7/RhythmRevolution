@@ -15,6 +15,7 @@ The main file contains of a File Header, Symbol block, an Info block, and a File
 Sound Archives contain 5 different versions that change how data is read and written. The version changes only effect Sound info, and nothing else.
 
 | **File Version** | **Description** |
+|------------------|-----------------|
 |1.0|Original version that is the most different. TODO: DESCRIBE HOW IT IMPACTS HOW SOUNDS ARE READ|
 |1.1|Introduces the concept of having each Sound reference link to some common info, and then have that common info link to more detailed information for each Sound type|
 |1.2|Introduces the use of Pan Mode and Pan Curve. Before this version the bytes were padding? For earlier versions, the default Pan Mode is Balance, and the Pan Curve is Square Root|
@@ -100,7 +101,7 @@ The info block contains information about entries. Magic is INFO.
 |0x10|Reference<`Table<Reference<PlayerInfo>>`>|Reference to Player Table|
 |0x18|Reference<`Table<Reference<FileInfo>>`>|Reference to File Table|
 |0x20|Reference<`Table<Reference<GroupInfo>>`>|Reference to Group Table|
-|0x28|Reference<`Table<Reference<SoundArchiveInformation>>`>|Reference to Sound Archive Information|
+|0x28|Reference<`SoundArchiveInformation`>|Reference to Sound Archive Information|
 |----|SoundArchiveInformation|Sound Archive Information|
 
 ### Sound Info
@@ -194,7 +195,7 @@ Groups contain information about which files should be loaded at the same time f
 |0x14|u32|Total size of all files contained within the Group|
 |0x18|a32|Absolute offset of the Wave Archive for the Group|
 |0x1C|u32|Size of the Wave Archive for the Group|
-|0x20|Reference<`Table<GroupEntry>`>|Reference to Group Entry Table|
+|0x20|Reference<`Table<Reference<GroupEntry>>`>|Reference to Group Entry Table|
 
 #### Group Entry
 A Group Entry represents a file contained within a Group.
